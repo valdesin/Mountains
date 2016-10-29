@@ -12,16 +12,41 @@ font-face {
   flex-direction: column; }
 
 #header {
-  background-color: #333; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #header .m-heading {
+    align-self: center; }
+  #header .button-about {
+    align-self: center; }
 
 #main {
   flex: 1 0 auto; }
 
-.m-heading {
-  font-size: 60pt;
-  color: #fff;
-  font-weight: lighter;
-  letter-spacing: 5px; }
+.m-header-site {
+  background: url("images/beautiful-mountains-header.jpg") center center;
+  background-size: cover;
+  height: 520px; }
+  .m-header-site .m-heading {
+    font-size: 60pt;
+    color: #fff;
+    font-weight: lighter;
+    letter-spacing: 5px; }
+  .m-header-site .button-about {
+    font-size: 30pt;
+    color: #fff;
+    border: 3px solid #0af6f9;
+    border-radius: 2px;
+    margin-top: 50px;
+    padding: 8px 60px;
+    background-color: rgba(10, 246, 249, 0.2); }
+
+.m-footer-site {
+  height: 170px;
+  background: url(images/beautiful-mountain-footer.jpg); }
+
+.button-about:hover {
+  background-color: #0af6f9; }
 
 /*# sourceMappingURL=style.scss.map */
 
