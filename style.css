@@ -25,6 +25,12 @@ font-face {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  #main .info-mont {
+    position: relative; }
+    #main .info-mont .icon-close {
+      position: absolute;
+      right: 0;
+      top: 0; }
 
 .m-header-site {
   background: url("images/beautiful-mountains-header.jpg") center center;
@@ -70,6 +76,8 @@ font-face {
       font-size: 10pt;
       float: right;
       padding-right: 20px; }
+    .main-content .info-mont .icon-close {
+      padding: 5px; }
 
 .m-footer-site {
   height: 170px;
