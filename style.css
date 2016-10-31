@@ -15,19 +15,22 @@ font-face {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  #header .m-heading {
+  #header .heading-header {
     align-self: center; }
   #header .button-about {
     align-self: center; }
 
 #main {
-  flex: 1 0 auto; }
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .m-header-site {
   background: url("images/beautiful-mountains-header.jpg") center center;
   background-size: cover;
-  height: 520px; }
-  .m-header-site .m-heading {
+  height: 600px; }
+  .m-header-site .heading-header {
     font-size: 60pt;
     color: #fff;
     font-weight: lighter;
@@ -41,12 +44,42 @@ font-face {
     padding: 8px 60px;
     background-color: rgba(10, 246, 249, 0.2); }
 
+.main-content {
+  background: url("images/slider/mont-blanc.jpg") center center;
+  background-size: cover;
+  height: 800px; }
+  .main-content .heading-mont {
+    margin: 30px 0;
+    font-size: 50pt;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: lighter; }
+  .main-content .icon {
+    border-radius: 50%; }
+  .main-content .info-mont {
+    margin: 30px 0;
+    width: 50%;
+    background-color: rgba(5, 69, 70, 0.7);
+    color: #fff;
+    font-size: 20pt;
+    border-radius: 5px;
+    padding: 20px 0 0 20px; }
+    .main-content .info-mont .link-location {
+      color: #fff;
+      text-decoration: none;
+      font-size: 10pt;
+      float: right;
+      padding-right: 20px; }
+
 .m-footer-site {
   height: 170px;
   background: url(images/beautiful-mountain-footer.jpg); }
 
 .button-about:hover {
   background-color: #0af6f9; }
+
+.info-mont {
+  visibility: hidden; }
 
 /*# sourceMappingURL=style.scss.map */
 
