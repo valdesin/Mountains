@@ -31,6 +31,10 @@ font-face {
       position: absolute;
       right: 0;
       top: 0; }
+  #main .icon-arrow {
+    position: absolute;
+    right: 5px;
+    top: 170%; }
 
 .m-header-site {
   background: url("images/beautiful-mountains-header.jpg") center center;
@@ -88,6 +92,12 @@ font-face {
 
 .info-mont {
   visibility: hidden; }
+
+.icon-arrow {
+  opacity: 0.5; }
+
+.icon-arrow:hover {
+  opacity: 1; }
 
 /*# sourceMappingURL=style.scss.map */
 
