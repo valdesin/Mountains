@@ -55,7 +55,7 @@ font-face {
     background-color: rgba(10, 246, 249, 0.2); }
 
 .main-content {
-  background: url("images/slider/mont-blanc.jpg") center center;
+  background: url("images/slider/mont-blanc.jpg") center center no-repeat;
   background-size: cover;
   height: 800px; }
   .main-content .heading-mont {
