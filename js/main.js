@@ -13,8 +13,17 @@ document.getElementById("icon-close").addEventListener("click",
 // end
 
 //Slider
-var i = 0;
-var imagesForSlider = ["mont-blanc.jpg","everest.jpg"];
+var i = 1;
+var infoOfMontBlanc = 'Mont Blanc  both meaning "White Mountain", is the highest mountain in the Alps and the highest in Europe after the Caucasus peaks. It rises 4,808.73 m (15,777 ft) above sea level and is ranked 11th in the worldin topographic prominence.';
+var infoOfEverest = "Everest  is Earth's highest mountain. Its peak is 8,848 metres (29,029 ft) above sea level. Mount Everest is located in the Mahalangur mountain range in Nepal. The international border between China (Tibet Autonomous Region) and Nepal runs across Everest's precise summit point. Its massif includes neighbouring peaks Lhotse, 8,516 m (27,940 ft); Nuptse, 7,855 m (25,771 ft) and Changtse, 7,580 m (24,870 ft).";
+var infoOfAiguilleDuDru = 'The Aiguille du Dru (also the Dru or the Drus; French, Les Drus) is a mountain in the Mont Blanc massif in the French Alps. It is situated to the east of the village of Les Praz in the Chamonix valley. "Aiguille" means "needle" in French.';
+var infoOfMatterhorn = "The Matterhorn (German: Matterhorn, [ˈmatərˌhɔrn]; Italian: Monte Cervino, [ˈmonte tʃerˈviːno]; French: Mont Cervin, [mɔ̃ sɛʁvɛ̃]), is a mountain of the Alps, straddling the main watershed and border between Switzerland and Italy. It is a huge and near-symmetrical pyramidal peak in the extended Monte Rosa area of the Pennine Alps, whose summit is 4,478 metres (14,692 ft) high, making it one of the highest summits in the Alps and Europe.[note 3] The four steep faces, rising above the surrounding glaciers, face the four compass points and are split by the Hörnli, Furggen, Leone and Zmutt ridges. The mountain overlooks the Swiss town of Zermatt in the canton of Valais to the north-east and the Italian town of Breuil-Cervinia in the Aosta Valley to the south. Just east of the Matterhorn is Theodul Pass, the main passage between the two valleys on its north and south sides and a trade route since the Roman Era.";
+
+
+var imagesForSlider = ["mont-blanc.jpg","everest.jpg", "aiguille-du-dru.jpg", "matterhorn.jpg"];
+var mountains = ["Mont Blanc", "Everest", "Aiguille du Dru", "Matterhorn"];
+var infoOfMountains = [infoOfMontBlanc, infoOfEverest, infoOfAiguilleDuDru, infoOfMatterhorn];
+
 document.getElementById("icon-arrow").addEventListener("click", function(){
     //Background-img
   var backgImg = document.getElementById("main");
@@ -23,12 +32,12 @@ document.getElementById("icon-arrow").addEventListener("click", function(){
   backgImg.style.backgroundSize="cover";
     //Headin-slider
     var headingOfHeader = document.getElementById("heading-mont");
-    headingOfHeader.innerHTML=" Everest";
+    headingOfHeader.innerHTML= mountains[i];
     //Text-Information
     var textInfo = document.getElementById("text-info");
-    textInfo.innerHTML="Everest  is Earth's highest mountain. Its peak is 8,848 metres (29,029 ft) above sea level. Mount Everest is located in the Mahalangur mountain range in Nepal. The international border between China (Tibet Autonomous Region) and Nepal runs across Everest's precise summit point. Its massif includes neighbouring peaks Lhotse, 8,516 m (27,940 ft); Nuptse, 7,855 m (25,771 ft) and Changtse, 7,580 m (24,870 ft).";
+    textInfo.innerHTML= infoOfMountains[i];
     // if(i < 1){
     //   i++;
     // }
-    (i < 1)? i++ : i=0;
+    (i < mountains.length-1)? i++ : i=0;
 });
