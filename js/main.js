@@ -14,6 +14,8 @@ document.getElementById("icon-close").addEventListener("click",
 
 //Slider
 var i = 1;
+var j = 3;
+var count = 0;
 var infoOfMontBlanc = 'Mont Blanc  both meaning "White Mountain", is the highest mountain in the Alps and the highest in Europe after the Caucasus peaks. It rises 4,808.73 m (15,777 ft) above sea level and is ranked 11th in the worldin topographic prominence.';
 var infoOfEverest = "Everest  is Earth's highest mountain. Its peak is 8,848 metres (29,029 ft) above sea level. Mount Everest is located in the Mahalangur mountain range in Nepal. The international border between China (Tibet Autonomous Region) and Nepal runs across Everest's precise summit point. Its massif includes neighbouring peaks Lhotse, 8,516 m (27,940 ft); Nuptse, 7,855 m (25,771 ft) and Changtse, 7,580 m (24,870 ft).";
 var infoOfAiguilleDuDru = 'The Aiguille du Dru (also the Dru or the Drus; French, Les Drus) is a mountain in the Mont Blanc massif in the French Alps. It is situated to the east of the village of Les Praz in the Chamonix valley. "Aiguille" means "needle" in French.';
@@ -37,22 +39,46 @@ backgImg.style.backgroundSize="cover";
   var textInfo = document.getElementById("text-info");
   textInfo.innerHTML= infoOfMountains[i];
 
-  //Arrow-preivous
-
-    document.getElementById("icon-arrow-previous").addEventListener("click", function(){
-      if(i > 0){
-        //Background-img
-        var linkImg = "url('images/slider/"+imagesForSlider[i--]+"') no-repeat";
-        backgImg.style.background= linkImg;
-        //Headin-slider
-        headingOfHeader.innerHTML= mountains[i--];
-        //Text-Information
-        textInfo.innerHTML= infoOfMountains[i--];
-      }
-    });
 
     // if(i < 1){
     //   i++;
     // }
+    j = i;
+    if(j == 0){
+    j = mountains.length-1
+  }else{
+    j--;
+  }
     (i < mountains.length-1)? i++ : i=0;
+
 });
+
+
+//Arrow-preivous
+
+  document.getElementById("icon-arrow-previous").addEventListener("click", function(){
+    count++;
+  
+    if(j < 0){
+      j = mountains.length-1;
+  }
+    var backgImg = document.getElementById("main");
+    var linkImg = "url('images/slider/"+imagesForSlider[j]+"') no-repeat";
+    backgImg.style.background= linkImg;
+    backgImg.style.backgroundSize="cover";
+      //Headin-slider
+      var headingOfHeader = document.getElementById("heading-mont");
+      headingOfHeader.innerHTML= mountains[j];
+      //Text-Information
+      var textInfo = document.getElementById("text-info");
+      textInfo.innerHTML= infoOfMountains[j];
+
+      i = j;
+      i++;
+      --j;
+      (i < mountains.length-1)? i++ : i=0;
+
+
+
+
+  });
