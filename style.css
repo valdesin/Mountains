@@ -5,7 +5,8 @@ font-face {
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Slabo 27px', serif; }
+  font-family: 'Slabo 27px', serif;
+  text-decoration: none; }
 
 #l-body {
   display: flex;
@@ -88,7 +89,7 @@ font-face {
       padding: 5px; }
 
 .m-footer-site {
-  height: 170px;
+  height: 50px;
   background: url(images/beautiful-mountain-footer.jpg); }
 
 .button-about:hover {
