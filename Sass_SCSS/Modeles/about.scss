@@ -2,16 +2,20 @@
   height: 100vh;
   background: url("images/bg-about.jpg") no-repeat;
   background-size: cover;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;;
 
-.img-my {
-  height: 100px;
-  width: 120px;
-  border-radius: 50% 60%;
-  margin-right: 20px;
 }
 
 .text-about-me {
-  font-size: 15pt;
+  font-size: 20pt;
   color: #444;
+}
+
+.info-mountains {
+  margin: 20px 0 90px 0;
+  border-radius: 50%;
+  outline: none;
+
 }

@@ -26,23 +26,18 @@
   .info-mont {
     position: relative;
 
-    .icon-close  {
-      position: absolute;;
-      right: 0;
-      top: 0;
-    }
   }
 
   .icon-arrow {
     position: absolute;
     right: 5px;
-    top: 165%;
+    top: 150%;
   }
 
   .icon-arrow-previous {
     position: absolute;
     left: 5px;
-    top: 165%;
+    top: 150%;
   }
 }
 
@@ -60,4 +55,5 @@
 .container-about {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
