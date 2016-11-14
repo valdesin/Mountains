@@ -41,6 +41,13 @@ font-face {
     left: 5px;
     top: 165%; }
 
+/*////////////////////////////////////////////////
+                  about.html
+//////////////////////////////////////////////*/
+.container-about {
+  display: flex;
+  align-items: center; }
+
 .m-header-site {
   background: url("images/beautiful-mountains-header.jpg") center center;
   background-size: cover;
@@ -91,6 +98,21 @@ font-face {
 .m-footer-site {
   height: 50px;
   background: url(images/beautiful-mountain-footer.jpg); }
+
+.container-about {
+  height: 100vh;
+  background: url("images/bg-about.jpg") no-repeat;
+  background-size: cover; }
+
+.img-my {
+  height: 100px;
+  width: 120px;
+  border-radius: 50% 60%;
+  margin-right: 20px; }
+
+.text-about-me {
+  font-size: 15pt;
+  color: #444; }
 
 .button-about:hover {
   background-color: #0af6f9; }
